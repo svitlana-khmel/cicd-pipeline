@@ -17,7 +17,9 @@ node -v //4.4.5
 
     stage('Run tests') {
       steps {
-        sh 'node --version'
+        sh '''chmod +x -R ${WORKSPACE}
+
+./scripts/test.sh'''
       }
     }
 
