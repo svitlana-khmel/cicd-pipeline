@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '/scripts/build.sh'
+        sh '''ls
+RUN ls
+EXEC ls'''
       }
     }
 
