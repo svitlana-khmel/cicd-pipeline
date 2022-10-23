@@ -4,8 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh '''ls
-RUN ls
-EXEC ls'''
+scripts/build.sh'''
       }
     }
 
