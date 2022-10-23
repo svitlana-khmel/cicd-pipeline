@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''ls
-node --version
-npm install'''
+        sh './scripts/build.sh'
       }
     }
 
